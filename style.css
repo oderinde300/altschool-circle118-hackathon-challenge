@@ -1,0 +1,302 @@
+:root {
+    --background-color: #252524;
+    --box-background-color: #6B6B6B;
+    --textarea-background-color: #000000;
+    --text-color: #fff;
+    --secondary-text-color: #808080;
+    --placeholder-text-color: hsl(0, 0%, 75%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+textarea {
+    color: white;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding: 0 5rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header>div {
+    background-color: var(--textarea-background-color);
+    width: 24.375rem;
+    height: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header>div p {
+    color: #FF0000;
+}
+
+.header>div p span {
+    color: var(--text-color);
+    font-style: italic;
+}
+
+.header-text {
+    margin-top: 0.813rem;
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 1.125rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.688rem;
+    letter-spacing: 0em;
+}
+
+.input-boxes-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    max-width: 69.625rem;
+    max-height: 44.5rem;
+    margin-top: 0.75rem;
+    justify-content: center;
+}
+
+.col-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 25.054rem;
+}
+
+.col-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    max-width: 25.054rem;
+}
+
+.redact-action {
+    width: 8rem;
+    height: 8rem;
+    margin-top: 10.793rem;
+    color: var(--text-color);
+    font-size: 0.938rem;
+    font-weight: 300;
+    line-height: 1.438rem;
+    letter-spacing: 0em;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--box-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+
+.input-boxes-container textarea {
+    background-color: var(--textarea-background-color);
+    color: white;
+    padding: 0.5rem;
+}
+
+.input-text {
+    width: 100%;
+    height: 20.3rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-bottom: 1.496rem;
+    line-height: 1.5rem;
+}
+
+.input-text::placeholder {
+    color: var(--placeholder-text-color);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.input-boxes-main-header {
+    color: var(--text-color);
+    margin-bottom: 0.321rem;
+    font-size: 0.938rem;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+}
+
+.input-boxes-header-2 {
+    color: var(--secondary-text-color);
+    font-size: 0.688rem;
+    font-weight: 400;
+    line-height: 1.063rem;
+    letter-spacing: 0em;
+    margin-bottom: 0.801rem;
+}
+
+.input-boxes-main-header-2 {
+    color: var(--text-color);
+    margin-bottom: 0.321rem;
+    font-size: 0.938rem;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+}
+
+.input-boxes-sub-header-1 {
+    font-size: 0.688rem;
+    font-weight: 400;
+    line-height: 1.063rem;
+    letter-spacing: 0em;
+    color: var(--secondary-text-color);
+}
+
+.word-2-redact {
+    background: var(--textarea-background-color);
+    color: var(--text-color);
+    margin-top: 0.801rem;
+    height: 4.007rem;
+    width: 100%;
+    border-radius: 0.313rem;
+    border: none;
+    outline: none;
+    padding-left: 0.5rem;
+}
+
+.word-2-redact::placeholder {
+    font-size: 0.625rem;
+    font-weight: 400;
+    line-height: 0.938rem;
+    letter-spacing: 0em;
+    color: var(--placeholder-text-color);
+}
+
+.input-boxes-sub-header-2-con {
+    color: var(--text-color);
+    background-color: var(--box-background-color);
+    margin: 1.496rem 0rem;
+    font-size: 0.625rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.709rem;
+    border-radius: 0.313rem;
+    line-height: 0.875rem;
+    letter-spacing: 0em;
+}
+
+.type-word {
+    display: flex;
+    justify-content: space-between;
+}
+
+.type-word input {
+    background: var(--textarea-background-color);
+    color: white;
+    height: 2.297rem;
+    width: 12.233rem;
+    border-radius: 0.313rem;
+    padding-left: 0.5rem;
+    border: none;
+    outline: none;
+}
+
+.type-word input::placeholder {
+    font-size: 0.625rem;
+    font-weight: 400;
+    line-height: 0.938rem;
+    letter-spacing: 0em;
+    color: var(--placeholder-text-color);
+    padding-top: 0.65rem;
+}
+
+.col-1 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin: 2.117rem auto;
+    width: 2.938rem;
+    height: 2.938rem;
+    border-radius: 50%;
+    background-color: #B4B4B4;
+    font-size: 2rem;
+    font-weight: 200;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.box-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-1>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--box-background-color);
+    color: var(--text-color);
+    height: 6.835rem;
+    width: 11.44rem;
+    border-radius: 0.313rem;
+}
+
+.box-1>div p:nth-child(1),
+.box-2 p:nth-child(1) {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3.75rem;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.box-1>div p:nth-child(2),
+.box-2 p:nth-child(2) {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.box-2 {
+    margin-top: 1.018rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--box-background-color);
+    color: var(--text-color);
+    border-radius: 0.313rem;
+    width: 24.964rem;
+    height: 6.835rem;
+}

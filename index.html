@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>REDACTR</title>
+</head>
+
+<body>
+    <section class="container-main">
+        <div class="header">
+            <div>
+                <p>REDACTR by <span>CIRCLE-118</span></p>
+            </div>
+            <P class="header-text">*Not Every Word Should Be Seen Use Redactr to Hide #### stuff*</P>
+        </div>
+        <section class="input-boxes-container">
+            <div class="col-1">
+                <div class="input-boxes-header">
+                    <p class="input-boxes-main-header">Input Full Text Here</p>
+                    <p class="input-boxes-header-2">This will contain the sentence to be scrambled</p>
+                </div>
+                <textarea placeholder="Content" class="input-text"></textarea>
+                <div>
+                    <p class="input-boxes-main-header-2">Input words to Redact</p>
+                    <p class="input-boxes-sub-header-1">
+                        Input word you want to redact and seperate them with space</p>
+                    <textarea placeholder="Input Words to Redact" class="word-2-redact"></textarea>
+                    <div class="input-boxes-sub-header-2-con">
+                        <p class="input-boxes-sub-header-2">
+                            Or use advance option to specify words and their replacements</p>
+                    </div>
+                    <div class="type-word">
+                        <input type="text" placeholder="Type Word" />
+                        <input type="text" placeholder="Type Replacement" />
+                    </div>
+                    <button>+</button>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="redact-action">
+                    <p>Redact Now</p>
+                    <p> &#8594;</p>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="input-boxes-header">
+                    <p class="input-boxes-main-header">See scrambled Output Here</p>
+                    <p class="input-boxes-header-2">This will contain the sentence with selected scrambled
+                        words
+                    </p>
+                </div>
+                <textarea class="input-text"></textarea>
+                <div>
+                    <div class="box-1">
+                        <div>
+                            <p>0</p>
+                            <p>Words Matched</p>
+                        </div>
+                        <div>
+                            <p>0</p>
+                            <p>Characters scrambled</p>
+                        </div>
+                    </div>
+                    <div class="box-2">
+                        <p>0</p>
+                        <p>Number of Words Scanned</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+</body>
+
+</html>
