@@ -272,7 +272,7 @@ textarea {
 
 .box-1>div p:nth-child(1),
 .box-2 p:nth-child(1) {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 400;
     line-height: 3.75rem;
     letter-spacing: 0em;
@@ -299,4 +299,109 @@ textarea {
     border-radius: 0.313rem;
     width: 24.964rem;
     height: 6.835rem;
+}
+
+#button {
+    background-color: #252524;
+}
+
+.redact-action {
+    transition: background-color 0.35s;
+    transition: scale 0.35s;
+}
+
+.redact-action:hover {
+    background-color: #3b3a3a;
+    scale: 1.1;
+}
+
+textarea,
+input {
+    transition: background-color 0.4s;
+}
+
+textarea:focus,
+textarea:active,
+input:focus,
+input:active {
+    background-color: #3b3a3a;
+}
+
+/* #redact_output {
+    position: relative;
+} */
+
+.time-taken-container {
+    position: relative;
+}
+
+.time-taken {
+    color: hsl(0, 0%, 75%);
+    font-weight: 100;
+    letter-spacing: 0.05rem;
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    font-style: italic;
+}
+
+
+@media (max-width: 960px) {
+    .input-boxes-container {
+        display: block;
+    }
+
+    .col-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 25%;
+        width: 100%;
+        max-width: 25.054rem;
+    }
+
+    .redact-action {
+        margin-top: 0;
+    }
+
+    .time-taken {
+        top: 18rem;
+        left: 20%;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .header {
+        width: 100%;
+    }
+
+    .header-text {
+        display: none;
+    }
+
+    .col-1 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .col-3 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .box-2 {
+        width: 100%;
+    }
+
+    .box-1 {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .time-taken {
+        top: 18rem;
+        left: 20%;
+    }
 }

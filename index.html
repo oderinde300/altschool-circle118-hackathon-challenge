@@ -20,31 +20,30 @@
             </div>
             <P class="header-text">*Not Every Word Should Be Seen Use Redactr to Hide #### stuff*</P>
         </div>
+
         <section class="input-boxes-container">
             <div class="col-1">
                 <div class="input-boxes-header">
                     <p class="input-boxes-main-header">Input Full Text Here</p>
                     <p class="input-boxes-header-2">This will contain the sentence to be scrambled</p>
                 </div>
-                <textarea placeholder="Content" class="input-text"></textarea>
+                <textarea id="redact_text" placeholder="Content" class="input-text"></textarea>
                 <div>
                     <p class="input-boxes-main-header-2">Input words to Redact</p>
                     <p class="input-boxes-sub-header-1">
                         Input word you want to redact and seperate them with space</p>
-                    <textarea placeholder="Input Words to Redact" class="word-2-redact"></textarea>
+                    <textarea id="redact_words" placeholder="Input Words to Redact" class="word-2-redact"></textarea>
                     <div class="input-boxes-sub-header-2-con">
                         <p class="input-boxes-sub-header-2">
-                            Or use advance option to specify words and their replacements</p>
+                            Or use advance option to specify a replacement character</p>
                     </div>
                     <div class="type-word">
-                        <input type="text" placeholder="Type Word" />
-                        <input type="text" placeholder="Type Replacement" />
+                        <input id="scrambler" type="text" placeholder="Type Replacement" />
                     </div>
-                    <button>+</button>
                 </div>
             </div>
             <div class="col-2">
-                <div class="redact-action">
+                <div id="redact_button" class="redact-action">
                     <p>Redact Now</p>
                     <p> &#8594;</p>
                 </div>
@@ -56,26 +55,31 @@
                         words
                     </p>
                 </div>
-                <textarea class="input-text"></textarea>
+                <div class="time-taken-container">
+                    <textarea id="redact_output" class="input-text"></textarea>
+                    <p class="time-taken"><span id="time">0.000</span>sec to scramble</p>
+                </div>
                 <div>
                     <div class="box-1">
                         <div>
-                            <p>0</p>
+                            <p id='words_Matched'>0</p>
                             <p>Words Matched</p>
                         </div>
                         <div>
-                            <p>0</p>
+                            <p id="characters_matched">0</p>
                             <p>Characters scrambled</p>
                         </div>
                     </div>
                     <div class="box-2">
-                        <p>0</p>
+                        <p id="num_of_words">0</p>
                         <p>Number of Words Scanned</p>
                     </div>
                 </div>
             </div>
         </section>
     </section>
+
+    <script src="app.js"></script>
 
 </body>
 
