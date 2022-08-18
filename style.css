@@ -395,6 +395,10 @@ input:active {
 }
 
 @media (max-width: 500px) {
+    #redact_text {
+        width: 100%;
+    }
+
     .header {
         width: 100%;
     }
