@@ -35,6 +35,7 @@ function Redactre(text_to_redact, word_to_redact, scrambler) {
     let full_Text = myArrayOfText.join(' ');
     let performanceTime = endTime - startTime;
 
+    console.log(text_to_redact)
 
     //push data to front-end
     document.getElementById("redact_output").value = full_Text;
