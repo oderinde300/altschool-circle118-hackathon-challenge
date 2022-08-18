@@ -4,7 +4,7 @@
     --textarea-background-color: #000000;
     --text-color: #fff;
     --secondary-text-color: #808080;
-    --placeholder-text-color: hsl(0, 0%, 75%);
+    --placeholder-text-color: hsl(0, 0%, 30%);
 }
 
 * {
@@ -92,9 +92,13 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     max-width: 25.054rem;
+}
+
+.col-3 {
+    height: 100vh;
 }
 
 .redact-action {
@@ -125,8 +129,8 @@ textarea {
 }
 
 .input-text {
-    width: 100%;
-    height: 20.3rem;
+    height: 20.5672rem;
+    width: 25.0546rem;
     border-radius: 5px;
     border: none;
     outline: none;
@@ -219,7 +223,7 @@ textarea {
     background: var(--textarea-background-color);
     color: white;
     height: 2.297rem;
-    width: 12.233rem;
+    width: 100%;
     border-radius: 0.313rem;
     padding-left: 0.5rem;
     border: none;
@@ -256,6 +260,7 @@ textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1rem;
 }
 
 .box-1>div {
@@ -272,7 +277,7 @@ textarea {
 
 .box-1>div p:nth-child(1),
 .box-2 p:nth-child(1) {
-    font-size: 2rem;
+    /* font-size: 2rem; */
     font-weight: 400;
     line-height: 3.75rem;
     letter-spacing: 0em;
@@ -301,6 +306,20 @@ textarea {
     height: 6.835rem;
 }
 
+.words_output {
+    font-size: 2rem;
+}
+
+#redact_output {
+    height: 20.5672rem;
+    width: 25.0546rem;
+    border-radius: 0.3125rem;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    overflow-y: scroll;
+}
+
 #button {
     background-color: #252524;
 }
@@ -327,22 +346,25 @@ input:active {
     background-color: #3b3a3a;
 }
 
-/* #redact_output {
-    position: relative;
-} */
-
 .time-taken-container {
     position: relative;
 }
 
+
+.time-taken-container {
+    margin-top: 16px;
+}
+
 .time-taken {
-    color: hsl(0, 0%, 75%);
+    color: var(--text-color);
     font-weight: 100;
     letter-spacing: 0.05rem;
-    position: absolute;
-    bottom: 20%;
-    left: 20%;
     font-style: italic;
+    background-color: var(--box-background-color);
+    margin-bottom: 16px;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
 }
 
 
@@ -391,13 +413,22 @@ input:active {
         margin: 0 auto;
     }
 
+    .box-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .words_output {
+        width: 100%;
+    }
+
     .box-2 {
         width: 100%;
     }
 
-    .box-1 {
+    .words_Matched_cont {
+        margin-bottom: 1rem;
         width: 100%;
-        margin: 1rem auto;
     }
 
     .time-taken {
